@@ -1,0 +1,3 @@
+Les nostres rutes (mapeig de l'URL) es definiran a router/web.php
+
+Les nostres vistes les podem trobar a resources/views

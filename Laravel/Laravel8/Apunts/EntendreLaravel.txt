@@ -1,0 +1,39 @@
+Com funciona Laravel?
+
+En el nostra projecte s'executa gracies a l'archiu index.php que es troba al directori public del nostre projecte.
+
+**A aquest mateix directori trobam l'archiu .htaccess que s'utilitza per configurar l'apache. Aquest archiu es el que esta configurat perque el nostre projecte treballi
+amb urls amigables entre altres coses.
+
+Patro singleton
+
+El patron singleton lo que fa es que si no existeix la instancia la crea, si ja existeix la reutilitza.
+L'idea es reutilitzar l'instancia en totes les peticions de l'aplicació. 
+
+$app -> singleton(
+    abstract:
+    concrete:
+)
+
+Despres s'ha de crear el Kernel, laravel utilitza dos kernels, un es troba en el directori app/Http/Kernel.php
+
+Aquest kernel lo que fa es dur a terme tota la logica necessaria per que es puguin atendre totes les peticions http
+
+Despres tambe trobam el kernel de consola, que ens permet executar qualsevol comanda que necessitem mitjançant la consola.
+Aquest kernel es troba a app/Console/Kernel.php
+
+Els kernels atenen peticion i la retornen.
+
+Laravel te rutes per tot tipus d'aplicacions com rutes aplicacions de consola, en temps real, rutes per aplicacions web, rutes per api.
+Te classes per validar formularis.
+Te events el qual podem afegir listeners per tal de desenvolupar accions a la nostra aplicació.
+
+**Laravel utilitza models pero no utilitza MVC, els models de laravel son molt compactes (unes 60 linies maxim).
+Laravel basicament es mes que una carpeta MVC, te models vistes i controladors pero va mes enlla i te moltes mes coses.
+Per exemple un sistema de excepcions, una capa http, el seu propi sistema denmegatzament (directori storage), etc...
+
+Podem aplicar els nostres patrons de disseny per tal de cobrir les necessitats de la nostra operació.
+
+QUE FAN LES FACHADAS 
+LO QUE FAN ES UTILITZAR EL METODE MAGIC CALL STATIC I CONSEGUEIX SIMULAR LA CRIDADA A METODES ESTATICS SENSE QUE REALMENT
+AQUETS METODES SIGUIN ESTATICS

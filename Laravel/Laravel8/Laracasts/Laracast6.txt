@@ -1,0 +1,3 @@
+En aquest video en ensenya com linkejar css i javascript a les nostres vistes.
+
+El proces es el de sempre, fent un link al head de la web. Tot aixo a la carpeta PUBLIC

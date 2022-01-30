@@ -1,0 +1,7 @@
+Ens parla del model vista controlador (MVC)
+
+Cada vegada que senvia una petició el controlador entra en joc.
+
+El controlador reb una petició i proporciona una resposta.
+
+La vista reb la data desde el controlador i la renderitza per l'usuari. (Generar l'HTML structure per l'usuari.)

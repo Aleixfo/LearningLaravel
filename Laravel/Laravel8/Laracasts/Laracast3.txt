@@ -1,0 +1,4 @@
+Ens parla de l'instalació d'un projecte de laravel a traves de l'instalador de laravel.
+Això ens permetra crear un projecte laravel amb una simple comanda.
+
+-> laravel new blog

@@ -1,0 +1,55 @@
+Laravel es un framework de PHP rapit i sencill.
+
+Conte paquets gratuits i d'altres de pagament per cada projecte. 
+Per exemple el packet de Laravel Nova (Administration Panel) costa 99$ per cada projecte.
+
+Si el temps que tardes en fer la feina de Laravel Nova et costa més de 99$ la millor opcio es agafar el laravel nova.
+
+Vapor Serverless Platform -> Son projectes de laravel sense servidor
+
+Laravel Forge -> Sistema de hosting que mos ofereix laravel, certificats SSL gratuits, etc..
+
+INSTALACIO
+
+Es necessari tenir instalat el composer a la maquina on es vol treballar amb laravel.
+https://getcomposer.org/download/
+
+**Sha de posar la versio de php utilitzada amb el Wamp/Xamp/Mamp i es necessari que sigui una
+versio superior a la 7.3 de PHP si no no es pot utilitzar laravel.
+
+Per instalar laravel a la maquina s'ha descriure la seguent comanda.
+
+-> composer global require laravel/installer
+
+Per comprovar que tenim tant el composer com laravel utilitzam les comandes
+
+-> composer -v
+-> laravel -v
+
+Una vegada tenim el laravel instalat ens asseguram que tenim la variable d'entorn PATH amb la ruta
+a la carpeta bin del composer.
+
+C:\Users\fontc\AppData\Roaming\Composer\vendor\bin
+%USERPROFILE%\AppData\Roaming\Composer\vendor\bin
+
+Ara ja podem crear un directori per el nostre projecte laravel i desde el directori executar la comanda per
+crear un nou projecte Laravel
+
+-> laravel new [nomProjecte]
+-> laravel new blog
+
+
+Tambe es pot instalar via composer, el resultat es el mateix.
+**D'aquesta forma no fa falta tenir l'instalador de laravel  instalat.
+
+-> composer create-projecte --prefer-dist laravel/laravel [nomProjecte]
+-> composer create-projecte --prefer-dist laravel/laravel blog
+
+Un vegada tenguem el nostre projecte laravel, a traves de la comanda
+
+-> php artisan serve
+
+Si tot ha anat be, si anam a 127.0.0.1:8000 podrem veure el nostre projecte laravel.
+
+
+
